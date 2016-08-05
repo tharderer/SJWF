@@ -1,0 +1,127 @@
+/* CSS Document */
+h1,h2,h3 {
+  text-align: center;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: white;
+  font-size:22px;
+  color: black;
+  margin: 0;
+  padding: 0;
+  word-wrap:break-word !important;
+  font-family: serif;
+}
+
+p {
+  text-align: left;
+}
+
+nav {
+  display: block;
+  padding: 0px;
+  background-color:#23A2CC;
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+#slide-toggle {
+  display:none;
+  padding:20px 23px;    
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+#menu {
+  padding:0;
+  margin:0;
+  list-style: none;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+  }
+  
+/* Styling the links */
+#menu a {
+  display:block;
+  padding:20px 23px;    
+  color:white;
+  font-size:20px;
+  text-decoration:none;
+  transition:background-color 1s;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+#menu a:hover { 
+  background-color: #f44336;
+}
+
+#content {
+  width: 100%;
+  padding-left: 0px;
+  /*margin: auto;*/
+}
+
+/* Background color change on Hover */
+#content a {
+  text-decoration: none;
+  background-color: #23A2CC;
+  padding:20px 23px;
+  color: white;
+  display: block;
+  transition: background-color 1s;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+#content a:hover { 
+  background-color: #f44336;
+}
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width : 964px){
+ 
+} 
+@media all and (max-width : 768px) { 
+
+
+  #menu {
+    display: none;
+  }
+  #menu a {
+    border-top: 1px solid white;
+
+  }
+
+  #slide-toggle {
+    display: block;
+  }
+}
+
+@media all and (max-width : 330px) {
+
+  nav ul li {
+    display:block;
+    width: 94%;
+  }
+  h1 {
+    text-align: center;
+  }
+}
